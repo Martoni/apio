@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # ----------------------------------------------------------------------
-# -- Generic Scons script for Sintesizing hardware on an FPGA and more.
+# -- Generic Scons script for Syntesizing hardware on an FPGA and more.
 # -- This file is part of the Apio project
 # -- (C) 2016-2017 FPGAwars
 # -- Authors Juan Gonzáles, Jesús Arroyo
@@ -150,7 +150,7 @@ except IndexError:
 # -- Debug
 # print('----> PCF Found: {}'.format(PCF))
 
-# -- Define the Sintesizing Builder
+# -- Define the Syntesizing Builder
 synth = Builder(
     action='yosys -p \"synth_ice40 -blif $TARGET\" -q $SOURCES',
     suffix='.blif',
